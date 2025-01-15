@@ -1,0 +1,70 @@
+/* Стили применяемые глобально(например, удаление подчёркиваний или удаление точек перед элементами списков) */
+body{
+    font-family: "Montserrat";
+    max-width: 1440px;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a{
+    color: black;
+}
+
+
+
+/* header */
+
+.header{
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 1200px;
+    align-items: right;
+    
+}
+
+.header__upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__inner{
+    margin-left: 20px;
+}
+
+.header__list{
+    display: flex;
+}
+
+.header__list li{
+    margin-right: 20px;
+}
+
+.header__lower{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.header__lower h2{
+    font-size: large;
+}
+
+.know_more:hover{
+    text-decoration: underline;
+}
+
+/* main */
+
+.team{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.main__block-container{
+    display: flex;
+}
