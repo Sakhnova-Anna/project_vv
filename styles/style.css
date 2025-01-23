@@ -1,7 +1,9 @@
 /* Стили применяемые глобально(например, удаление подчёркиваний или удаление точек перед элементами списков) */
 body{
     font-family: "Montserrat";
-    max-width: 1440px;
+    min-width: 1440px;
+    margin: 0 auto;
+    background-color: rgb(220, 220, 220);
 }
 
 li{
@@ -21,10 +23,8 @@ a{
 /* header */
 
 .header{
-    margin: 0 auto;
-    height: 100vh;
-    max-width: 1200px;
-    align-items: right;
+    height: 99vh;
+    min-width: 1440px
     
 }
 
@@ -34,7 +34,7 @@ a{
 }
 
 .header__inner{
-    margin-left: 20px;
+    margin-left: 5vh;
 }
 
 .header__list{
@@ -42,12 +42,12 @@ a{
 }
 
 .header__list li{
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .header__lower{
     text-align: center;
-    margin-top: 200px;
+    margin-top: 40vh;
 }
 
 .header__lower h2{
@@ -60,11 +60,82 @@ a{
 
 /* main */
 
-.team{
+.main{
     display: flex;
-    /* justify-content: space-between; */
+    flex-direction: column;    
 }
 
-.main__block-container{
+
+.section{
     display: flex;
+    justify-content: center;
+}
+
+.section__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section__inner h2{
+    text-align: center;    
+}
+
+
+.team{
+    display: flex;
+    min-width: 1440px;
+    justify-content: space-around;
+    
+}
+
+.team__item{
+    width: 192px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__block{
+    min-width: 1440px;
+}
+
+.main__block-title{
+    text-align: center;
+}
+
+.cards{
+    text-align: center;
+    min-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 384px;
+}
+
+.card__content{
+    text-align: center;
+}
+
+
+.footer{
+    margin-top: 100px;
+    padding-top: 20px;
+    text-align: right;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    background-color: grey;
+}
+
+
+.about{
+    min-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__item{
+    width: 384px;
+    text-align: center;
 }

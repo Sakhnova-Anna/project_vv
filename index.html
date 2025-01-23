@@ -14,15 +14,15 @@
             
             <section class= "header__upper">
                 <div class="header__inner">
-                    <a href="#"><p>Логотип</p></a>
+                    <a href="index.html"><p>Логотип</p></a>
                     
                 </div>
                 <div class="header__inner">
                     <ul class = "header__list">
-                        <li><a href="#">Портфолио</a> </li>
-                        <li><a href="#">О нас</a> </li>
-                        <li><a href="#">Команда</a> </li>
-                        <li><a  href="#">Вход</a></li> 
+                        <li><a href="#Portfolio">Портфолио</a> </li>
+                        <li><a href="#about_us">О нас</a> </li>
+                        <li><a href="#Team">Команда</a> </li>
+                        <li><a  href="singIn/sign_in.html">Вход</a></li> 
                     </ul>
                 </div>
             </section>
@@ -32,7 +32,7 @@
                 <h1>
                     рады видеть вас 
                 </h1>
-                <a class = "know_more" href="#">узнать больше</a>
+                <a class = "know_more" href="">узнать больше</a>
             </section>
         </header>
 
@@ -40,71 +40,93 @@
         
         <!-- Основной контент -->
         <main class = "main">
-            <section class = "section">
+
+            <section class="section" id="about_us">
+
+                <div class="section__inner">
+                    <h2>О нас</h2>
+                    <div class="about">
+                        <div class="about__item">
+                            <h3>Электронная коммерция</h2>
+                            <img src="images/ecommerce.jpg" alt="#" width="384" height="256">
+                            <p>С помощью электронной коммерции вы можете охватить клиентов, которые живут в отдаленных или сельских районах, где традиционные магазины могут быть недоступны. Однако платформы электронной коммерции предлагают инструменты, которые делают управление запасами более эффективным и менее подверженным ошибкам.</p>
+                        </div>
+                        <div class="about__item">
+                            <h3>Отзывчивый дизайн</h3>
+                            <img src="images/responsive.webp" alt="#" width="384" height="256">
+                            <p>Отзывчивый веб-дизайн — это подход к дизайну, который учитывает диапазон устройств и их размеров, обеспечивая автоматическую адаптацию к экрану независимо от того, просматривается ли контент на планшете, телефоне, телевизоре или часах.</p>
+                        </div>
+                        <div class="about__item">
+                            <h3>Веб-безопасность</h3>
+                            <img src="images/security.jpg" alt="#" width="384" height="256">
+                            <p>Веб-безопасность предотвратит утечку конфиденциальной информации неавторизованными пользователями на внешние серверы. Фишинг. Большинство утечек данных начинаются с вредоносного фишингового электронного письма. Веб-безопасность фильтрует эти электронные письма, чтобы они не попадали в почтовые ящики пользователей.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </section>
+
+
+
+
+            <section class = "section" id="Team">
 
                 <div class = "section__inner">
                     <h2>Команда</h2>
                     <div class = "team">
-                    <div>
-                        <img class = "section__inner-image" src="images/3048122.png" alt="image1" width="192">
-                        <p>Биография одного из команды</p>
+                    <div class="team__item">
+                        <img class = "section__inner-image" src="images/face_one.png" alt="image1" width="192">
+                        <p class="team__item-text">Биография одного из команды</p>
                     </div>
-                    <div>
-                        <img class = "section__inner-image" src="images/10487926.png" alt="image2" width="192">
-                        <p>Биография второго из команды</p>
+                    <div class="team__item">
+                        <img class = "section__inner-image" src="images/face_two.png" alt="image2" width="192">
+                        <p class="team__item-text">Биография второго из команды</p>
                     </div>
                 </div>
-                </div>
-            </section>
-
-
-            <section class="main__block" id="Portfolio">
-                <div class="main__block-title">
-                    <h2>Портфолио</h2>
-                    <p>Набор сайтов сделаных на этой неделе</p>
-                </div>
-
-                <div class="main__block-container">
-
-                    <div class="card">
-                        <div class="card__image">
-                            <img src="./images/website-setup.jpg" width="192" alt="">
-                        </div>
-                        <div class="card__content">
-                            <a href="#"><b>UINIIN</b></a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card__image">
-                            <img src="./images/hand-drawn.jpg" width="192" alt="">
-                        </div>
-                        <div class="card__content">
-                            <a href="#"><b>Threads</b></a>
-                        </div>
-                    </div>
-
-                    <div class ="card">
-                        <div class="card__image">
-                            <img src="./images/nature-site.jpg" width="192  " alt="">
-                        </div>
-                        <div class="card__content">
-                            <a href="#"><b>Web Template</b></a>
-                        </div>
-                    </div>
                 </div>
             </section>
 
-            <section>
-    <form action="#">
-        <h1>Вход</h1>
-        <input type="email" name="email" placeholder="Эл. адрес:" required> 
-        <input type="password" name="password" placeholder="Пароль:" required> 
-        <button>Войти</button>
-    </form>
 
-
+            <section class="section" id="Portfolio">
+                <div class="section_inner">
+                    <div class="main__block-title">
+                        <h2>Портфолио</h2>
+                        <p>Набор сайтов сделаных на этой неделе</p>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card__image">
+                                <img src="./images/music_site.JPG" width="384" height="256" alt="#">
+                            </div>
+                            <div class="card__content">
+                                <a href="#"><b>MUSIC</b></a>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="card__image">
+                                <img src="./images/cars_site.jpg" width="384" height="256" alt="#">
+                            </div>
+                            <div class="card__content">
+                                <a href="#"><b>CONCEPT CARS</b></a>
+                            </div>
+                        </div>
+    
+                        <div class ="card">
+                            <div class="card__image">
+                                <img src="./images/pets_site.jpg" width="384" height="256" alt="">
+                            </div>
+                            <div class="card__content">
+                                <a href="#"><b>PETS</b></a>
+                        </div>
+                    </div>
+                        
+                    </div>
+                </div>
+                
             </section>
+
         </main>
 
 
