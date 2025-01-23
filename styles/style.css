@@ -23,6 +23,7 @@ a{
 /* header */
 
 .header{
+    padding-top: 10px;
     height: 99vh;
     min-width: 1440px
     
@@ -41,9 +42,18 @@ a{
     display: flex;
 }
 
-.header__list li{
-    margin-right: 25px;
+
+.header__list a{
+    padding: 10px 15px;
+    transition: color 0.5s, background-color 0.5s;
 }
+
+.header__list a:hover {
+    color: white; /* Цвет текста при наведении */
+    background-color: rgb(10,10,10); /* Цвет фона при наведении */
+    border-radius: 5px; /* Скругление углов фона */
+}
+
 
 .header__lower{
     text-align: center;
@@ -138,4 +148,105 @@ a{
 .about__item{
     width: 384px;
     text-align: center;
+}
+
+
+/* Медиазапрос для разрешения 1024px */
+@media (max-width: 1024px) {
+    
+    main{
+        width: 1024px;
+    }
+
+    body {
+        min-width: 1024px; /* Убираем фиксированную ширину */   
+    }
+
+    .header {
+        min-width: 1024px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto; /* Позволяем заголовку адаптироваться по высоте */
+        padding: 20px 0px; /* Добавляем отступы */
+    }
+
+    .header__upper {
+        max-width: 1024px;
+        flex-direction: column; /* Меняем направление на вертикальное */
+        justify-content: center;
+        align-items: center; /* Центрируем элементы */
+    }
+
+    .header__inner {
+        margin-bottom:   10px; /* Добавляем отступ между логотипом и меню */
+    }
+
+    .header__list {
+        margin-right: 32px;
+        flex-direction: column; /* Меняем направление на вертикальное */
+        align-items: center; /* Центрируем элементы списка */
+    }
+
+    .header__list li {
+        padding: 10px; /* Увеличиваем отступы для удобства на мобильных */
+        margin-bottom: 10px;
+    }
+
+    .header__lower {
+        max-width: 1100px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px; /* Уменьшаем отступ сверху */
+        justify-content: center;
+    }
+
+    .section {
+        width: 1024px;
+        
+        display: flex;
+        flex-direction: column; /* Меняем направление на вертикальное */
+    }
+
+    .section__inner{
+        width: 1024px;
+        text-align: center;
+    }
+
+    .about{
+        min-width: 1024px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team{
+        min-width: 1024px;
+    }
+
+    .cards{
+        min-width: 1024px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        padding-top: 20px;
+    }
+
+    .footer{
+        width: 1024px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .footer h2{
+        padding-right: 50px;
+    }
+
+    .footer p{
+        padding-right: 50px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
 }
