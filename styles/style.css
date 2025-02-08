@@ -1,23 +1,13 @@
-/* Стили применяемые глобально(например, удаление подчёркиваний или удаление точек перед элементами списков) */
-body{
+/* Импортирование css файла с шрифтами*/
+
+@import url(fonts.css);
+
+.body{
     font-family: "Montserrat";
     min-width: 1440px;
     margin: 0 auto;
     background-color: rgb(220, 220, 220);
 }
-
-li{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-a{
-    color: black;
-}
-
 
 
 /* header */
@@ -25,8 +15,17 @@ a{
 .header{
     padding-top: 10px;
     height: 99vh;
-    min-width: 1440px
+    max-width: 1440px;
     
+    font-family: "Montserrat";
+    margin: 0 auto;
+    background-color: rgb(220, 220, 220);
+
+}
+
+.link{
+    text-decoration: none;
+    color: black;
 }
 
 .header__upper{
@@ -34,7 +33,7 @@ a{
     justify-content: space-between;
 }
 
-.header__inner{
+.header__upper-item{
     margin-left: 5vh;
 }
 
@@ -43,34 +42,43 @@ a{
 }
 
 
-.header__list a{
+.header__list-item{
     padding: 10px 15px;
     transition: color 0.5s, background-color 0.5s;
 }
 
-.header__list a:hover {
+
+.header__list-item:hover {
     color: white; /* Цвет текста при наведении */
     background-color: rgb(10,10,10); /* Цвет фона при наведении */
     border-radius: 5px; /* Скругление углов фона */
 }
 
 
+.header__item{
+    list-style-type: none;
+}
+
 .header__lower{
     text-align: center;
     margin-top: 40vh;
 }
 
-.header__lower h2{
+.header__text{
     font-size: large;
 }
 
-.know_more:hover{
+.header__know_more:hover{
     text-decoration: underline;
 }
 
 /* main */
 
 .main{
+    max-width: 1440px;
+    font-family: "Montserrat";
+    margin: 0 auto;
+    background-color: rgb(220, 220, 220);
     display: flex;
     flex-direction: column;    
 }
@@ -87,7 +95,7 @@ a{
     justify-content: space-between;
 }
 
-.section__inner h2{
+.section__title{
     text-align: center;    
 }
 
@@ -106,7 +114,7 @@ a{
 }
 
 .main__block{
-    min-width: 1440px;
+    max-width: 1440px;
 }
 
 .main__block-title{
@@ -130,6 +138,10 @@ a{
 
 
 .footer{
+    max-width: 1440px;
+    font-family: "Montserrat";
+    margin: 0 auto;
+
     margin-top: 100px;
     padding-top: 20px;
     text-align: right;
@@ -158,7 +170,7 @@ a{
         width: 1024px;
     }
 
-    body {
+    .body {
         min-width: 1024px; /* Убираем фиксированную ширину */   
     }
 
@@ -178,17 +190,21 @@ a{
         align-items: center; /* Центрируем элементы */
     }
 
-    .header__inner {
+    .header__upper-item {
         margin-bottom:   10px; /* Добавляем отступ между логотипом и меню */
     }
 
     .header__list {
-        margin-right: 32px;
+        padding-right: 60px;
         flex-direction: column; /* Меняем направление на вертикальное */
         align-items: center; /* Центрируем элементы списка */
     }
 
-    .header__list li {
+    .header__logo{
+        padding-right: 90px;
+    }
+
+    .header__item {
         padding: 10px; /* Увеличиваем отступы для удобства на мобильных */
         margin-bottom: 10px;
     }
@@ -240,11 +256,11 @@ a{
         margin: 0px;
     }
 
-    .footer h2{
+    .footer__title{
         padding-right: 50px;
     }
 
-    .footer p{
+    .footer__text{
         padding-right: 50px;
         padding-bottom: 0px;
         margin-bottom: 0px;

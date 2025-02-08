@@ -5,34 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
         <title>CraftedPixels</title>
     </head>
 
-    <body>      
-        <header class = "header">
+    <body class="body">
+        <header class="header">
             
-            <section class= "header__upper">
-                <div class="header__inner">
-                    <a href="index.html"><p>Логотип</p></a>
-                    
+            <section class="header__upper">
+                <div class="header__upper-item">
+                    <a class="link header__logo" href="index.html"><p>Логотип</p></a>
                 </div>
-                <div class="header__inner">
-                    <ul class = "header__list">
-                        <li><a href="#portfolio">Портфолио</a> </li>
-                        <li><a href="#about_us">О нас</a> </li>
-                        <li><a href="#team">Команда</a> </li>
-                        <li><a  href="singIn/sign_in.html">Вход</a></li> 
+                <div class="header__upper-item">
+                    <ul class="header__list">
+                        <li class="header__item"><a class="link header__list-item" href="#portfolio">Портфолио</a> </li>
+                        <li class="header__item"><a class="link header__list-item" href="#about_us">О нас</a> </li>
+                        <li class="header__item"><a class="link header__list-item" href="#team">Команда</a> </li>
+                        <li class="header__item"><a class="link header__list-item" href="sign_in.html">Вход</a></li> 
                     </ul>
                 </div>
             </section>
 
             <section class="header__lower">
-                <h2>добро пожаловать на сайт!</h2>
+                <h2 class="header__text">добро пожаловать на сайт!</h2>
                 <h1>
                     рады видеть вас 
                 </h1>
-                <a class = "know_more" href="">узнать больше</a>
+                <a class ="link header__know_more" href="#">узнать больше</a>
             </section>
         </header>
 
@@ -44,10 +42,10 @@
             <section class="section" id="about_us">
 
                 <div class="section__inner">
-                    <h2>О нас</h2>
+                    <h2 class="section__title">О нас</h2>
                     <div class="about">
                         <div class="about__item">
-                            <h3>Электронная коммерция</h2>
+                            <h3>Электронная коммерция</h3>
                             <img src="images/ecommerce.jpg" alt="#" width="384" height="256">
                             <p>С помощью электронной коммерции вы можете охватить клиентов, которые живут в отдаленных или сельских районах, где традиционные магазины могут быть недоступны. Однако платформы электронной коммерции предлагают инструменты, которые делают управление запасами более эффективным и менее подверженным ошибкам.</p>
                         </div>
@@ -73,7 +71,7 @@
             <section class = "section" id="team">
 
                 <div class = "section__inner">
-                    <h2>Команда</h2>
+                    <h2 class="section__title">Команда</h2>
                     <div class = "team">
                     <div class="team__item">
                         <img class = "section__inner-image" src="images/face_one.png" alt="image1" width="192">
@@ -89,7 +87,7 @@
 
 
             <section class="section" id="portfolio">
-                <div class="section_inner">
+                <div class="section__inner">
                     <div class="main__block-title">
                         <h2>Портфолио</h2>
                         <p>Набор сайтов сделаных на этой неделе</p>
@@ -100,7 +98,7 @@
                                 <img src="./images/music_site.JPG" width="384" height="256" alt="#">
                             </div>
                             <div class="card__content">
-                                <a href="#"><b>MUSIC</b></a>
+                                <a class="link" href="#"><b>MUSIC</b></a>
                             </div>
                         </div>
     
@@ -109,7 +107,7 @@
                                 <img src="./images/cars_site.jpg" width="384" height="256" alt="#">
                             </div>
                             <div class="card__content">
-                                <a href="#"><b>CONCEPT CARS</b></a>
+                                <a class="link" href="#"><b>CONCEPT CARS</b></a>
                             </div>
                         </div>
     
@@ -118,7 +116,7 @@
                                 <img src="./images/pets_site.jpg" width="384" height="256" alt="">
                             </div>
                             <div class="card__content">
-                                <a href="#"><b>PETS</b></a>
+                                <a class="link" href="#"><b>PETS</b></a>
                         </div>
                     </div>
                         
@@ -130,9 +128,9 @@
         </main>
 
 
-        <footer class = "footer">
-            <h2>Разработчик</h2>
-            <p>Сахнова Анна, ЭК-31</p>
+        <footer class="footer">
+            <h2 class="footer__title">Разработчик</h2>
+            <p class="footer__text">Сахнова Анна, ЭК-31</p>
         </footer>
 
     </body>
