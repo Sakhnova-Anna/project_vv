@@ -136,6 +136,10 @@
     text-align: center;
 }
 
+.card__content-text{
+    font-weight: bold;
+}
+
 
 .footer{
     max-width: 1440px;
@@ -185,23 +189,20 @@
 
     .header__upper {
         max-width: 1024px;
-        flex-direction: column; /* Меняем направление на вертикальное */
-        justify-content: center;
+        display: flex;
+        flex-direction: column; /*Меняем направление на вертикальное*/
         align-items: center; /* Центрируем элементы */
     }
 
     .header__upper-item {
+        margin-left: 0vh;
         margin-bottom:   10px; /* Добавляем отступ между логотипом и меню */
     }
 
     .header__list {
-        padding-right: 60px;
         flex-direction: column; /* Меняем направление на вертикальное */
         align-items: center; /* Центрируем элементы списка */
-    }
-
-    .header__logo{
-        padding-right: 90px;
+        padding-right: 32px;
     }
 
     .header__item {
