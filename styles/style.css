@@ -1,75 +1,14 @@
 /* Импортирование css файла с шрифтами*/
 
 @import url(fonts.css);
+@import url(header.css);
+@import url(footer.css);
 
 .body{
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     min-width: 1440px;
     margin: 0 auto;
     background-color: rgb(220, 220, 220);
-}
-
-
-/* header */
-
-.header{
-    padding-top: 10px;
-    height: 99vh;
-    max-width: 1440px;
-    
-    font-family: "Montserrat";
-    margin: 0 auto;
-    background-color: rgb(220, 220, 220);
-
-}
-
-.link{
-    text-decoration: none;
-    color: black;
-}
-
-.header__upper{
-    display: flex;
-    justify-content: space-between;
-}
-
-.header__upper-item{
-    margin-left: 5vh;
-}
-
-.header__list{
-    display: flex;
-}
-
-
-.header__list-item{
-    padding: 10px 15px;
-    transition: color 0.5s, background-color 0.5s;
-}
-
-
-.header__list-item:hover {
-    color: white; /* Цвет текста при наведении */
-    background-color: rgb(10,10,10); /* Цвет фона при наведении */
-    border-radius: 5px; /* Скругление углов фона */
-}
-
-
-.header__item{
-    list-style-type: none;
-}
-
-.header__lower{
-    text-align: center;
-    margin-top: 40vh;
-}
-
-.header__text{
-    font-size: large;
-}
-
-.header__know-more:hover{
-    text-decoration: underline;
 }
 
 /* main */
@@ -141,33 +80,7 @@
 }
 
 
-.footer{
-    max-width: 1440px;
-    font-family: "Montserrat";
-    margin: 0 auto;
 
-    margin-top: 100px;
-    padding-top: 20px;
-    text-align: right;
-    padding-right: 100px;
-    padding-bottom: 20px;
-    background-color: grey;
-}
-
-
-.about{
-    min-width: 1440px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.about__item{
-    width: 384px;
-    text-align: center;
-}
-
-
-/* Медиазапрос для разрешения 1024px */
 @media (max-width: 1024px) {
     
     main{
@@ -175,7 +88,7 @@
     }
 
     .body {
-        min-width: 1024px; /* Убираем фиксированную ширину */   
+        min-width: 1024px;    
     }
 
     .header {
@@ -183,30 +96,30 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: auto; /* Позволяем заголовку адаптироваться по высоте */
-        padding: 20px 0px; /* Добавляем отступы */
+        height: auto; 
+        padding: 20px 0px; 
     }
 
     .header__upper {
         max-width: 1024px;
         display: flex;
-        flex-direction: column; /*Меняем направление на вертикальное*/
-        align-items: center; /* Центрируем элементы */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .header__upper-item {
         margin-left: 0vh;
-        margin-bottom:   10px; /* Добавляем отступ между логотипом и меню */
+        margin-bottom:   10px;
     }
 
     .header__list {
-        flex-direction: column; /* Меняем направление на вертикальное */
-        align-items: center; /* Центрируем элементы списка */
+        flex-direction: column;
+        align-items: center; 
         padding-right: 32px;
     }
 
     .header__item {
-        padding: 10px; /* Увеличиваем отступы для удобства на мобильных */
+        padding: 10px; 
         margin-bottom: 10px;
     }
 

@@ -1,0 +1,59 @@
+.header{
+    padding-top: 10px;
+    height: 99vh;
+    max-width: 1440px;
+    
+    font-family: "Montserrat";
+    margin: 0 auto;
+    background-color: rgb(220, 220, 220);
+
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.header__upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__upper-item{
+    margin-left: 5vh;
+}
+
+.header__list{
+    display: flex;
+}
+
+
+.header__list-item{
+    padding: 10px 15px;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+
+.header__list-item:hover {
+    color: white; /* Цвет текста при наведении */
+    background-color: rgb(10,10,10); /* Цвет фона при наведении */
+    border-radius: 5px; /* Скругление углов фона */
+}
+
+
+.header__item{
+    list-style-type: none;
+}
+
+.header__lower{
+    text-align: center;
+    margin-top: 40vh;
+}
+
+.header__text{
+    font-size: large;
+}
+
+.header__know-more:hover{
+    text-decoration: underline;
+}
