@@ -4,6 +4,11 @@
 @import url(header.css);
 @import url(footer.css);
 
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
 .body{
     font-family: "Montserrat", sans-serif;
     min-width: 1440px;
