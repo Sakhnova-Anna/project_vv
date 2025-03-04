@@ -21,6 +21,11 @@
                         <li class="header__item"><a class="link header__list-item" href="#section__about-us">О нас</a> </li>
                         <li class="header__item"><a class="link header__list-item" href="#section__team">Команда</a> </li>
                         <li class="header__item"><a class="link header__list-item" href="sign_in.html">Вход</a></li> 
+                        <li class="header__item">
+                            <label class="switch">
+                                <input type="checkbox" id="toggleSwitch">
+                                <span class="slider round"></span>
+                            </label>
                     </ul>
                 </div>
             </section>
@@ -32,10 +37,22 @@
             </section>
         </header>
         
-        <!-- Блок со скидочным купоном -->
+        <!-- Скидочный купон -->
 
-        <div class="discount" id="discount__block">
-            <h2>TEXT</p>
+        <div class="coupon">
+            <div class="coupon-header">
+                <h2>Скидка 20%</h2>
+                <p>На все услуги веб-студии!</p>
+            </div>
+            <div class="coupon-body">
+                <p>Используйте код:</p>
+                <h3 class="coupon-code">WEB20OFF</h3>
+                <p>При заказе на сумму от 5000₽</p>
+            </div>
+            <div class="coupon-footer">
+                <p>Срок действия: <strong id="countdown"></strong></p>
+                <p>Не упустите возможность!</p>
+            </div>
         </div>
 
         <!-- Основной контент -->
@@ -134,6 +151,8 @@
             <h2 class="footer__title">Разработчик</h2>
             <p class="footer__text">Сахнова Анна, ЭК-31</p>
         </footer>
-        <script src="scripts/script.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/coupon.js"></script>
+        <script src="js/theme.js"></script>
     </body>
     </html>
