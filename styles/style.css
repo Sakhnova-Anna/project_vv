@@ -6,6 +6,27 @@
 @import url(coupon.css);
 @import url(switcher.css);
 
+.scroll__btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50; /* Нежный зеленый цвет */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Округлые углы */
+    padding: 12px 20px; /* Увеличенный отступ */
+    cursor: pointer;
+    z-index: 1000;
+    display: none; /* Изначально скрыта */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s; /* Плавный переход */
+}
+
+.scroll__btn:hover {
+    background-color: #45a049; /* Темнее при наведении */
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
 .body{
     font-family: "Montserrat", sans-serif;
     min-width: 1440px;
