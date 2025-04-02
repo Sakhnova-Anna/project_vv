@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <title>CraftedPixels</title>
     </head>
 
@@ -110,6 +113,65 @@
                         <h2 class="section__title">Портфолио</h2>
                         <p class="section__text">Набор сайтов сделаных на этой неделе</p>
                     </div>
+                    
+                    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/music_site.JPG" width="768" height="512" alt="#">
+            </div>
+            <div class="card__content">
+                <a class="link card__content-text" href="#">MUSIC</a>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/cars_site.jpg" width="768" height="512" alt="#">
+            </div>
+            <div class="card__content">
+                <a class="link card__content-text" href="#">CONCEPT CARS</a>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class ="card">
+            <div class="card__image">
+                <img src="./images/pets_site.jpg" width="768" height="512" alt="">
+            </div>
+            <div class="card__content">
+                <a class="link card__content-text" href="#">PETS</a>
+            </div>
+        </div>
+      </div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+                </div>
+                
+            </section>
+
+            <!-- <section class="section" id="section__portfolio">
+                <div class="section__inner">
+                    <div class="main__block-title">
+                        <h2 class="section__title">Портфолио</h2>
+                        <p class="section__text">Набор сайтов сделаных на этой неделе</p>
+                    </div>
                     <div class="cards">
                         <div class="card">
                             <div class="card__image">
@@ -118,7 +180,7 @@
                             <div class="card__content">
                                 <a class="link card__content-text" href="#">MUSIC</a>
                             </div>
-                            </div>
+                        </div>
     
                         <div class="card">
                             <div class="card__image">
@@ -141,8 +203,7 @@
                     </div>
                 </div>
                 
-            </section>
-
+            </section> -->
         </main>
 
 
@@ -150,6 +211,7 @@
             <h2 class="footer__title">Разработчик</h2>
             <p class="footer__text">Сахнова Анна, ЭК-31</p>
         </footer>
+        <script src="js/swiper.js"></script>
         <script src="js/script.js"></script>
         <script src="js/coupon.js"></script>
         <script src="js/theme.js"></script>
@@ -157,5 +219,6 @@
         <script src="js/scroll.js"></script>
         <script src="js/aboutUs.js"></script>
         <script src="js/preloader.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </body>
     </html>
