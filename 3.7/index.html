@@ -1,0 +1,224 @@
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <title>CraftedPixels</title>
+    </head>
+
+    <body class="body">
+
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+        
+
+        <header class="header">
+            
+            <section class="header__upper">
+                <div class="header__upper-item">
+                    <a class="link" href="index.html"><p class="header__logo">Логотип</p></a>
+                </div>
+                <div class="header__upper-item">
+                    <ul class="header__list">
+                        <li class="header__item"><a class="link header__list-item" href="#section__portfolio">Портфолио</a> </li>
+                        <li class="header__item"><a class="link header__list-item" href="#section__about-us">О нас</a> </li>
+                        <li class="header__item"><a class="link header__list-item" href="#section__team">Команда</a> </li>
+                        <li class="header__item"><a class="link header__list-item" href="sign_in.html">Вход</a></li> 
+                        <li class="header__item">
+                            <label class="switch">
+                                <input type="checkbox" id="toggleSwitch">
+                                <span class="slider round"></span>
+                            </label>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="header__lower">
+                <h2 class="header__text">добро пожаловать на сайт!</h2>
+                <h1 class="header__greetings">рады видеть вас</h1>
+                <a class ="link header__know-more" href="#">узнать больше</a>
+            </section>
+        </header>
+        
+        <!-- кнопка "наверх"  -->
+
+        <button class = "scroll__btn" id="scrollToTopBtn" style="display: none;">⬆️ Наверх</button>
+        
+        <!-- Скидочный купон -->
+
+        <div class="coupon">
+            <div class="coupon-header">
+                <h2>Скидка 20%</h2>
+                <p>На все услуги веб-студии!</p>
+            </div>
+            <div class="coupon-body">
+                <p>Используйте код:</p>
+                <h3 class="coupon-code">WEB20OFF</h3>
+                <p>При заказе на сумму от 5000₽</p>
+            </div>
+            <div class="coupon-footer">
+                <p>Срок действия: <strong id="countdown"></strong></p>
+                <p>Не упустите возможность!</p>
+            </div>
+        </div>
+
+        <!-- Основной контент -->
+        <main class = "main">
+
+            <section class="section" id="section__about-us">
+
+                <div class="section__inner about__us__section">
+                    <h2 class="section__title">О нас</h2>
+                    <div class="about">
+                        <!-- <div class="about__item">
+                            <h3 class="about__item-title">Электронная коммерция</h3>
+                            <img src="images/ecommerce.jpg" alt="#" width="384" height="256">
+                            <p class="about__item-text">С помощью электронной коммерции вы можете охватить клиентов, которые живут в отдаленных или сельских районах, где традиционные магазины могут быть недоступны. Однако платформы электронной коммерции предлагают инструменты, которые делают управление запасами более эффективным и менее подверженным ошибкам.</p>
+                        </div>
+                        <div class="about__item">
+                            <h3 class="about__item-title">Отзывчивый дизайн</h3>
+                            <img src="images/responsive.webp" alt="#" width="384" height="256">
+                            <p class="about__item-text">Отзывчивый веб-дизайн — это подход к дизайну, который учитывает диапазон устройств и их размеров, обеспечивая автоматическую адаптацию к экрану независимо от того, просматривается ли контент на планшете, телефоне, телевизоре или часах.</p>
+                        </div>
+                        <div class="about__item">
+                            <h3 class="about__item-title">Веб-безопасность</h3>
+                            <img src="images/security.jpg" alt="#" width="384" height="256">
+                            <p class="about__item-text">Веб-безопасность предотвратит утечку конфиденциальной информации неавторизованными пользователями на внешние серверы. Фишинг. Большинство утечек данных начинаются с вредоносного фишингового электронного письма. Веб-безопасность фильтрует эти электронные письма, чтобы они не попадали в почтовые ящики пользователей.</p>
+                        </div>
+                    </div>
+                    
+                </div> -->
+
+            </section>
+
+            <section class="section" id="section__team">
+                <div class="section__inner">
+                    <h2 class="section__title">Команда</h2>
+                    <div class="team" id="team-container">
+                        <!-- вывод с помощью js -->
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section" id="section__portfolio">
+                <div class="section__inner">
+                    <div class="main__block-title">
+                        <h2 class="section__title">Портфолио</h2>
+                        <p class="section__text">Набор сайтов сделаных на этой неделе</p>
+                    </div>
+                    
+                    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/music_site.JPG" width="768" height="512" alt="#">
+            </div>
+            <div class="card__content">
+                <a class="link card__content-text" href="#">MUSIC</a>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/cars_site.jpg" width="768" height="512" alt="#">
+            </div>
+            <div class="card__content">
+                <a class="link card__content-text" href="#">CONCEPT CARS</a>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class ="card">
+            <div class="card__image">
+                <img src="./images/pets_site.jpg" width="768" height="512" alt="">
+            </div>
+            <div class="card__content">
+                <a class="link card__content-text" href="#">PETS</a>
+            </div>
+        </div>
+      </div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+                </div>
+                
+            </section>
+
+            <!-- <section class="section" id="section__portfolio">
+                <div class="section__inner">
+                    <div class="main__block-title">
+                        <h2 class="section__title">Портфолио</h2>
+                        <p class="section__text">Набор сайтов сделаных на этой неделе</p>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card__image">
+                                <img src="./images/music_site.JPG" width="384" height="256" alt="#">
+                            </div>
+                            <div class="card__content">
+                                <a class="link card__content-text" href="#">MUSIC</a>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="card__image">
+                                <img src="./images/cars_site.jpg" width="384" height="256" alt="#">
+                            </div>
+                            <div class="card__content">
+                                <a class="link card__content-text" href="#">CONCEPT CARS</a>
+                            </div>
+                        </div>
+    
+                        <div class ="card">
+                            <div class="card__image">
+                                <img src="./images/pets_site.jpg" width="384" height="256" alt="">
+                            </div>
+                            <div class="card__content">
+                                <a class="link card__content-text" href="#">PETS</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </section> -->
+        </main>
+
+
+        <footer class="footer">
+            <h2 class="footer__title">Разработчик</h2>
+            <p class="footer__text">Сахнова Анна, ЭК-31</p>
+        </footer>
+        <script src="js/swiper.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/coupon.js"></script>
+        <script src="js/theme.js"></script>
+        <script src="js/team.js"></script>
+        <script src="js/scroll.js"></script>
+        <script src="js/aboutUs.js"></script>
+        <script src="js/preloader.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </body>
+    </html>

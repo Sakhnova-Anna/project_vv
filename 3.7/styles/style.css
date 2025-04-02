@@ -1,0 +1,210 @@
+/* Импортирование css файла с шрифтами*/
+
+@import url(fonts.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(coupon.css);
+@import url(switcher.css);
+@import url(preloader.css);
+
+.swiper {
+    width: 768px;
+    height: 512px;
+  }
+
+.scroll__btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50; /* Нежный зеленый цвет */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Округлые углы */
+    padding: 12px 20px; /* Увеличенный отступ */
+    cursor: pointer;
+    z-index: 1000;
+    display: none; /* Изначально скрыта */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s; /* Плавный переход */
+}
+
+.scroll__btn:hover {
+    background-color: #45a049; /* Темнее при наведении */
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+.body{
+    font-family: "Montserrat", sans-serif;
+    min-width: 1440px;
+    margin: 0 auto;
+    background-color: rgb(220, 220, 220);
+}
+
+/* main */
+
+.main{
+    max-width: 1440px;
+    font-family: "Montserrat";
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;    
+}
+
+
+.section{
+    display: flex;
+    justify-content: center;
+}
+
+.section__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section__title{
+    text-align: center;    
+}
+
+
+.team{
+    display: flex;
+    min-width: 1440px;
+    justify-content: space-around;
+    
+}
+
+.team__item{
+    width: 192px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__block{
+    max-width: 1440px;
+}
+
+.main__block-title{
+    text-align: center;
+}
+
+.cards{
+    text-align: center;
+    min-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 384px;
+}
+
+.card__content{
+    text-align: center;
+}
+
+.card__content-text{
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 1024px) {
+    
+    main{
+        width: 1024px;
+    }
+
+    .body {
+        min-width: 1024px;    
+    }
+
+    .header {
+        min-width: 1024px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto; 
+        padding: 20px 0px; 
+    }
+
+    .header__upper {
+        max-width: 1024px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .header__upper-item {
+        margin-left: 0vh;
+        margin-bottom:   10px;
+    }
+
+    .header__list {
+        flex-direction: column;
+        align-items: center; 
+        padding-right: 32px;
+    }
+
+    .header__item {
+        padding: 10px; 
+        margin-bottom: 10px;
+    }
+
+    .header__lower {
+        max-width: 1100px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px; /* Уменьшаем отступ сверху */
+        justify-content: center;
+    }
+
+    .section {
+        width: 1024px;
+        
+        display: flex;
+        flex-direction: column; /* Меняем направление на вертикальное */
+    }
+
+    .section__inner{
+        width: 1024px;
+        text-align: center;
+    }
+
+    .about{
+        min-width: 1024px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team{
+        min-width: 1024px;
+    }
+
+    .cards{
+        min-width: 1024px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        padding-top: 20px;
+    }
+
+    .footer{
+        width: 1024px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .footer__title{
+        padding-right: 50px;
+    }
+
+    .footer__text{
+        padding-right: 50px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+}

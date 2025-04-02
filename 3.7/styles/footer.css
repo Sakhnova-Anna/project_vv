@@ -1,0 +1,24 @@
+.footer{
+    max-width: 1440px;
+    font-family: "Montserrat";
+    margin: 0 auto;
+
+    margin-top: 100px;
+    padding-top: 20px;
+    text-align: right;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    background-color: grey;
+}
+
+
+.about{
+    min-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__item{
+    width: 384px;
+    text-align: center;
+}
