@@ -115,57 +115,73 @@
                     </div>
                     
                     <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <div class="card">
-            <div class="card__image">
-                <img src="./images/music_site.JPG" width="768" height="512" alt="#">
-            </div>
-            <div class="card__content">
-                <a class="link card__content-text" href="#">MUSIC</a>
-            </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card">
-            <div class="card__image">
-                <img src="./images/cars_site.jpg" width="768" height="512" alt="#">
-            </div>
-            <div class="card__content">
-                <a class="link card__content-text" href="#">CONCEPT CARS</a>
-            </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class ="card">
-            <div class="card__image">
-                <img src="./images/pets_site.jpg" width="768" height="512" alt="">
-            </div>
-            <div class="card__content">
-                <a class="link card__content-text" href="#">PETS</a>
-            </div>
-        </div>
-      </div>
-      ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-  </div>
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card__image">
+                                    <img src="./images/music_site.JPG" width="768" height="512" alt="#">
+                                </div>
+                                <div class="card__content">
+                                    <a class="link card__content-text" href="#">MUSIC</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card__image">
+                                    <img src="./images/cars_site.jpg" width="768" height="512" alt="#">
+                                </div>
+                                <div class="card__content">
+                                    <a class="link card__content-text" href="#">CONCEPT CARS</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class ="card">
+                                <div class="card__image">
+                                    <img src="./images/pets_site.jpg" width="768" height="512" alt="">
+                                </div>
+                                <div class="card__content">
+                                    <a class="link card__content-text" href="#">PETS</a>
+                                </div>
+                            </div>
+                        </div>
+                        ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
 
                 </div>
                 
             </section>
 
+            <!-- Форма с LocalStorage -->
+            <div class="form-wrapper">
+                <h2 class="form-title">Обратная связь</h2>
+                <form id="feedback-form">
+                  <div class="form-group">
+                    <input type="text" class="form-input" id="name" placeholder="Ваше имя" required />
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-input" id="email" placeholder="Ваш email" required />
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-textarea" id="message" rows="4" placeholder="Сообщение" required></textarea>
+                  </div>
+                  <button type="submit" class="form-button">Отправить</button>
+                </form>
+              </div>
             <!-- <section class="section" id="section__portfolio">
                 <div class="section__inner">
                     <div class="main__block-title">
@@ -220,5 +236,6 @@
         <script src="js/aboutUs.js"></script>
         <script src="js/preloader.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/formLocalStorage.js"></script>
     </body>
     </html>
